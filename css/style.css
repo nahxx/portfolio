@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&family=Secular+One&display=swap');
+html, body {margin: 0; padding: 0; }
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Secular One', sans-serif;
+}
+a { text-decoration: none; color: #222; }
+h1, h2, p, span { color: #222; margin: 0; padding: 0;}
+ul, li { list-style: none; padding: 0; }
+
+#header {
+  width: 100%;
+  height: 80px;
+}
+#header .logo-box {
+  height: 100%;
+  text-align: center;
+}
+#header .logo-box img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  box-sizing: border-box;
+  opacity: .5;
+  animation: logoAni 4s infinite;
+}
+/* #header .logo-box h1 {
+  float: left;
+  line-height: 80px;
+  display: block;
+  color: #777;
+} */
+@keyframes logoAni {
+  0% {
+    transform: rotateY(180deg);
+  }
+  20% {
+    transform: rotateY(0);
+  }
+  40% {
+    transform: rotateY(180deg);
+  }
+  60% {
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+/* 메인 영역 */
+#main {
+  width: 1320px;
+  height: calc(100% - 161px);
+  margin: 0 auto;
+}
+#main h2 {
+  text-align: center;
+  display: block;
+  padding: 30px 0;
+  box-sizing: border-box;
+  font-size: 50px;
+  background: linear-gradient(90deg, rgba(197,140,246,1) 0%, rgba(134,148,246,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#main ul li {
+  border-radius: 25px;
+  border: 3px dashed #f1f1f1;
+  height: 250px;
+  display: block;
+  width: 20%;
+  margin-left: 10%;
+  margin-top: 1%;
+  text-align: center;
+  padding: 25px 24px;
+  box-sizing: border-box;
+}
+#main ul:last-child {
+  margin-top: 4%;
+}
+#main ul li:nth-child(1) {
+  margin-left: 0;
+}
+#main ul li span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #888;
+}
+#main ul li p {
+  margin-top: 3px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  color: #666;
+}
+#main ul li p em {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 32px;
+  background: linear-gradient(90deg, rgba(197,140,246,1) 0%, rgba(134,148,246,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#main ul li button {
+  outline: none;
+  background: none;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  transition: .5s;
+}
+#main ul li button a {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgba(197,140,246,1) 0%, rgba(134,148,246,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: .5s;
+}
+#main ul li button:hover {
+  border: 0px solid #f1f1f1;
+  background: linear-gradient(90deg, rgba(197,140,246,1) 0%, rgba(134,148,246,1) 100%);
+}
+#main ul li button:hover a {
+  color: white;
+}
+/* 푸터 영역 */
+#footer {
+  height: 80px;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  background: #f1f1f1;
+}
+#footer p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .4);
+  text-align: center;
+  line-height: 80px;
+}
