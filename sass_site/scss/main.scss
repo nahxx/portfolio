@@ -1,0 +1,48 @@
+.mainbanner {
+  position: relative;
+  // height: 696px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:nth-child(1) {
+    background-image: url('../img/main/banner01.jpg');
+  }
+  &:nth-child(2) {
+    background-image: url('../img/main/banner02.jpg');
+  }
+  &:nth-child(3) {
+    background-image: url('../img/main/banner03.jpg');
+  }
+  .txt-box {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 60%;
+    h2 {
+      font-size: 70px;
+    }
+    p {
+      margin-top: 3%;
+      font-size: 20px;
+      font-weight: 700;
+      color: $fontColorBasic;
+    }
+  }
+}
+.inner {
+  &:nth-child(1) {
+    margin-top: 100px;
+  }
+  &:last-child {
+    margin-bottom: 100px;
+  }
+  .box {
+    &.items_2 {
+      .items {
+        p + a {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

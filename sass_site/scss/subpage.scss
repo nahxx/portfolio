@@ -1,0 +1,117 @@
+body.subpage {
+  main {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      // 왼쪽 메뉴
+      #lnb {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        box-sizing: border-box;
+        padding-right: 50px;
+        &.company {
+          background: url('../img/lnb/about.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.community {
+          background: url('../img/lnb/community.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.product {
+          background: url('../img/lnb/product.jpg') no-repeat center;
+          background-size: cover;
+        }
+        &.gallery {
+          background: url('../img/lnb/gallery.png') no-repeat center;
+          background-size: cover;
+        }
+        &.location {
+          background: url('../img/lnb/location.jpg') no-repeat center;
+          background-size: cover;
+        }
+        span {
+          position: absolute;
+          top: 40%;
+          left: 10%;
+          display: inline-block;
+          font-size: 50px;
+          line-height: 50px;
+        }
+        ul {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          width: 100%;
+          max-width: 1720px;
+          height: 95px;
+          li {
+            width: 33.333%;
+            background: #fff;
+            border-bottom: 2px solid #f3f3f3;
+            &:last-child a {
+              border-right: none;
+            }
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              line-height: 95px;
+              border-right: 1px solid #f3f3f3;
+              text-align: center;
+              color: #999;
+              font-size: $fontSizeMid;
+              box-sizing: border-box;
+              transition: .5s;
+              &:hover {
+                padding-left: 20px;
+              }
+              &.on {
+                color: #262f40;
+                background: $gbtnColor;
+                border-right: none;
+              }
+            }
+          }
+        }
+      }
+      // sub page title 영역
+      .sub-title {
+        .inner {
+          &.community {
+            h2 span {
+              position: absolute;
+              top: 40%;
+              left: 10%;
+              display: inline-block;
+              font-size: 50px;
+              line-height: 50px;
+            }
+          }
+        }
+      }
+      // page content 영역
+      .inner {
+        &.community {
+          h2 span {
+            margin-left: 10%;
+          }
+          .tbl-header {
+            margin-top: 50px;
+          }
+        }
+        & + .inner {
+          margin-top: 50px;
+          padding-top: 50px;
+          border-top: 1px solid $borderColorPrimary;
+        }
+        .box {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

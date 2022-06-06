@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>unid 클론코딩</title>
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- swiper css 1 -->
+    <link rel="stylesheet" href="./css/swiper.css"> <!-- swiper css 2 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- swiper js -->
+    <script type="text/javascript" src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 헤더 영역 -->
+      <!-- 헤더 상단 -->
+      <header id="header">
+        <div class="header-wrap">
+          <div class="header-box">
+            <h1 id="logo">
+              <img src="./img/logo.png" alt="logo">
+            </h1> <!-- unid logo -->
+            <div class="right-box">
+              <div class="langBtn"> <!-- 언어 선택 -->
+                <button type="button" class="openBtn">
+                  KOR
+                  <span class="arrow-icon">▼</span>
+                </button>
+                <ul class="langList">
+                  <li><a href="#">ENG</a></li>
+                  <li><a href="#">JPN</a></li>
+                </ul>
+              </div>
+              <div class="searchBtn"> <!-- 검색창 열기 -->
+                <button type="button" class="openSearch">
+                  <span class="search-icon">
+                    <img src="./img/search.png" alt="검색이미지">
+                  </span>
+                </button>
+              </div>
+              <!-- 모바일 span button -->
+              <div class="mBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <!-- 사이드 gnb -->
+              <div class="sideBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <section class="sideGnb">
+                <article class="sideinner">
+                  <div class="bg-box"><!-- before, after-->
+                    <div class="bg01"></div>
+                    <div class="bg02"></div>
+                    <div class="bg03"></div>
+                    <div class="bg04"></div>
+                    <div class="bg05"></div>
+                    <div class="bg06"></div>
+                  </div>
+                  <article class="inner">
+                    <ul class="sideGnb1">
+                      <li>
+                        <h2>
+                          <span>
+                            회사소개
+                            <em>01</em>
+                          </span>
+                        </h2>
+                        <ul class="sideGnb2">
+                          <li><a href="#"><span>회사소개</span></a></li>
+                          <li><a href="#"><span>CEO 인사말</span></a></li>
+                          <li><a href="#"><span>연혁</span></a></li>
+                          <li>
+                            <a href="#"><span>2030 VISION</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>2030 vision</span></a></li>
+                              <li><a href="#"><span>UNID CI소개</span></a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#"><span>생활 속의 유니드</span></a></li>
+                          <li>
+                            <a href="#"><span>글로벌 네트워크</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>국내사업장</span></a></li>
+                              <li><a href="#"><span>해외사업장</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#"><span>영업소</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>화학사업부</span></a></li>
+                              <li><a href="#"><span>보드사업부</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h2>
+                          <span>
+                            사업부소개
+                            <em>02</em>
+                          </span>
+                        </h2>
+                        <ul class="sideGnb2">
+                          <li>
+                            <a href="#"><span>화학사업부 (CA)</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>사업소개</span></a></li>
+                              <li><a href="#"><span>제품소개</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#"><span>보드사업부 (BT)</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>사업소개</span></a></li>
+                              <li><a href="#"><span>제품소개</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h2>
+                          <span>
+                            투자정보
+                            <em>03</em>
+                          </span>
+                        </h2>
+                        <ul class="sideGnb2">
+                          <li>
+                            <a href="#"><span>경영정보</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>회사정관</span></a></li>
+                              <li><a href="#"><span>주주</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#"><span>재무정보</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>연결</span></a></li>
+                              <li><a href="#"><span>별도</span></a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#"><span>주가정보</span></a></li>
+                          <li>
+                            <a href="#"><span>공시자료</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>전자공고</span></a></li>
+                              <li><a href="#"><span>공시정보 관리규정</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#"><span>IR자료실</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>IR Presentation</span></a></li>
+                              <li><a href="#"><span>Analyst 보고서</span></a></li>
+                              <li><a href="#"><span>감사보고서</span></a></li>
+                              <li><a href="#"><span>사업보고서</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h2>
+                          <span>
+                            지속가능경영
+                            <em>04</em>
+                          </span>
+                        </h2>
+                        <ul class="sideGnb2">
+                          <li>
+                            <a href="#"><span>윤리경영</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>윤리경영</span></a></li>
+                              <li><a href="#"><span>신문고</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#"><span>안전환경경영</span></a>
+                            <ul class="sideGnb3">
+                              <li><a href="#"><span>안전경영 활동</span></a></li>
+                              <li><a href="#"><span>환경경영 활동</span></a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#"><span>사회공헌</span></a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h2>
+                          <span>
+                            채용
+                            <em>05</em>
+                          </span>
+                        </h2>
+                        <ul class="sideGnb2">
+                          <li><a href="#">
+                            <span>채용사이트 바로가기</span>
+                            <img src="./img/open-icon.png" alt="바로가기">
+                          </a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h2>
+                          <span>
+                            고객센터
+                            <em>06</em>
+                          </span>
+                        </h2>
+                        <ul class="sideGnb2">
+                          <li><a href="#"><span>뉴스</span></a></li>
+                          <li><a href="#"><span>홍보동영상</span></a></li>
+                        </ul>
+                        <div class="inner">
+                          <a href="#">
+                            <span>임직원윤리행동규칙</span>
+                            <img src="./img/download-icon.png" alt="다운로드">
+                          </a>
+                          <a href="#">
+                            <span>윤리행준수 서약서</span>
+                            <img src="./img/download-icon.png" alt="다운로드">
+                          </a>
+                          <a href="#">
+                            <span>신문고 문서</span>
+                            <img src="./img/download-icon.png" alt="다운로드">
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </article>
+                <button class="closeBtn"></button> <!-- 닫기 버튼 -->
+              </section>
+            </div>
+            <!-- 상단바 gnb -->
+            <nav id="top-gnb">
+              <div class="gnb-bg"></div>
+              <ul class="gnb1 area">
+                <li>
+                  <a href="#">회사소개</a>
+                  <ul class="gnb2">
+                    <li><a href="#"><span>회사소개</span></a></li>
+                    <li><a href="#"><span>CEO 인사말</span></a></li>
+                    <li><a href="#"><span>연혁</span></a></li>
+                    <li><a href="#"><span>2030 VISION</span></a></li>
+                    <li><a href="#"><span>생활 속의 유니드</span></a></li>
+                    <li><a href="#"><span>글로벌 네트워크</span></a></li>
+                    <li><a href="#"><span>영업소</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">사업부소개</a>
+                  <ul class="gnb2">
+                    <li>
+                      <a href="#"><span>화학사업부 (CA)</span></a>
+                      <ul class="gnb3">
+                        <li><a href="#"><span>수산화칼륨</span></a></li>
+                        <li><a href="#"><span>탄산칼륨</span></a></li>
+                        <li><a href="#"><span>염산</span></a></li>
+                        <li><a href="#"><span>액체염소</span></a></li>
+                        <li><a href="#"><span>차아염소산소다</span></a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"><span>보드사업부 (BT)</span></a>
+                      <ul class="gnb3">
+                        <li><a href="#"><span>MDF</span></a></li>
+                        <li><a href="#"><span>LPM</span></a></li>
+                        <li><a href="#"><span>제재목</span></a></li>
+                        <li><a href="#"><span>GLOSSPAN</span></a></li>
+                        <li><a href="#"><span>ECOPAN</span></a></li>
+                        <li><a href="#"><span>올고다 마루</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">투자정보</a>
+                  <ul class="gnb2">
+                    <li><a href="#"><span>경영정보</span></a></li>
+                    <li><a href="#"><span>재무정보</span></a></li>
+                    <li><a href="#"><span>주가정보</span></a></li>
+                    <li><a href="#"><span>공시자료</span></a></li>
+                    <li><a href="#"><span>IR자료실</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">지속가능경영</a>
+                  <ul class="gnb2">
+                    <li><a href="#"><span>윤리경영</span></a></li>
+                    <li><a href="#"><span>안전환경경영</span></a></li>
+                    <li><a href="#"><span>사회공헌</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">채용</a>
+                  <ul class="gnb2">
+                    <li><a href="#">
+                      <span>채용사이트 바로가기</span>
+                      <img src="./img/open-icon.png" alt="바로가기">
+                    </a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                  <ul class="gnb2">
+                    <li><a href="#"><span>뉴스</span></a></li>
+                    <li><a href="#"><span>홍보동영상</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <nav id="m-gnb" class="">
+          <div class="m-btn">
+            <button class="closeBtn"></button> <!-- 닫기 버튼 -->
+          </div>
+          <ul class="m-gnb1 area">
+            <li class="active">
+              <a href="#">회사소개</a>
+              <ul class="m-gnb2">
+                <li><a href="#"><span>회사소개</span></a></li>
+                <li><a href="#"><span>CEO 인사말</span></a></li>
+                <li><a href="#"><span>연혁</span></a></li>
+                <li><a href="#"><span>2030 VISION</span></a></li>
+                <li><a href="#"><span>생활 속의 유니드</span></a></li>
+                <li><a href="#"><span>글로벌 네트워크</span></a></li>
+                <li><a href="#"><span>영업소</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업부소개</a>
+              <ul class="m-gnb2">
+                <li>
+                  <a href="#"><span>화학사업부 (CA)</span></a>
+                  <ul class="m-gnb3">
+                    <li><a href="#"><span>수산화칼륨</span></a></li>
+                    <li><a href="#"><span>탄산칼륨</span></a></li>
+                    <li><a href="#"><span>염산</span></a></li>
+                    <li><a href="#"><span>액체염소</span></a></li>
+                    <li><a href="#"><span>차아염소산소다</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>보드사업부 (BT)</span></a>
+                  <ul class="m-gnb3">
+                    <li><a href="#"><span>MDF</span></a></li>
+                    <li><a href="#"><span>LPM</span></a></li>
+                    <li><a href="#"><span>제재목</span></a></li>
+                    <li><a href="#"><span>GLOSSPAN</span></a></li>
+                    <li><a href="#"><span>ECOPAN</span></a></li>
+                    <li><a href="#"><span>올고다 마루</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">투자정보</a>
+              <ul class="m-gnb2">
+                <li><a href="#"><span>경영정보</span></a></li>
+                <li><a href="#"><span>재무정보</span></a></li>
+                <li><a href="#"><span>주가정보</span></a></li>
+                <li><a href="#"><span>공시자료</span></a></li>
+                <li><a href="#"><span>IR자료실</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">지속가능경영</a>
+              <ul class="m-gnb2">
+                <li><a href="#"><span>윤리경영</span></a></li>
+                <li><a href="#"><span>안전환경경영</span></a></li>
+                <li><a href="#"><span>사회공헌</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">채용</a>
+              <ul class="m-gnb2">
+                <li><a href="#">
+                  <span>채용사이트 바로가기</span>
+                  <img src="./img/open-icon.png" alt="바로가기">
+                </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+              <ul class="m-gnb2">
+                <li><a href="#"><span>뉴스</span></a></li>
+                <li><a href="#"><span>홍보동영상</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- 통합검색 창 -->
+        <div class="searchBox">
+          <div class="area">
+            <div class="inner">
+              <h5>SEARCH</h5>
+              <form>
+                <div class="search-box">
+                  <label for="headerSearch" class="blind">검색</label>
+                  <input type="text" id="headerSearch" name="searchWord" placeholder="검색어를 입력하세요">
+                  <button class="btn-search" type="button">
+                    <span class="search-icon">
+                      <img src="./img/search.png" alt="검색이미지">
+                    </span>
+                  </button>
+                </div>
+                <p class="ex">
+                  수산화칼륨, MDF, GLOSSPAN, 미국, 베트남, 유니드
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 메인화면 영역 -->
+      <!-- <div class="load">
+        <div class="ring">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="54" cy="54" r="54"></circle>
+          </svg>
+        </div>
+      </div> -->
+      <section id="main" class="main">
+        <div class="bg-video-wrap">
+          <div id="bg-video" class="player" data-property="{
+            videoURL: 'https://youtu.be/dNMzwr_74OY',
+            mute: true,
+            showControls: false,
+            useOnMobile: true,
+            quality: 'highres',
+            containment: '.main',
+            loop: true,
+            autoPlay: true,
+            stopMovieOnBlur: false,
+            startAt: 0,
+            opacity: 1
+          }">
+          </div>
+        </div>
+        <div class="bg-wrap"></div>
+        <div class="inner-wrap">
+          <div class="inner area">
+            <div class="txt-box">
+              <h2>
+                <span class="word" data-word="고객이"><span>고</span><span>객</span><span>이</span></span>
+                <span class="space"> </span>
+                <span class="word" data-word="필요한"><span>필</span><span>요</span><span>한</span></span>
+                <span class="space"> </span>
+                <span class="word" data-word="것을"><span>것</span><span>을</span></span>
+                <br>
+                <span class="word" data-word="먼저"><span>먼</span><span>저</span></span>
+                <span class="space"> </span>
+                <span class="word" data-word="생각합니다."><span>생</span><span>각</span><span>합</span><span>니</span><span>다</span><span>.</span></span>
+              </h2>
+            </div>
+            <div class="rotate-icon">
+              <!-- before wordcicle -->
+              <div class="play-btn">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="54" cy="54" r="54"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-box">
+          <div class="scroll-icon area">
+            <div class="txt">
+              <span>SCROLL DOWN</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./img/main/quick01.png" alt="quick01">
+                <span>CHEMICAL</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/main/quick02.png" alt="qhick02">
+                <span>BOARD & TIMBER</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 섹션1 business 영역 -->
+      <section id="first" class="sec business">
+        <div class="bg1">
+          <img src="./img/sec1/bg01.png" alt="배경1">
+        </div> <!-- 회색 배경 -->
+        <div class="bg2 clip">
+          <img src="./img/sec1/bg02.png" alt="배경2">
+        </div> <!-- 라인 배경 -->
+        <div class="title-box">
+          <div class="inner area">
+            <span>01</span>
+            <!-- before -->
+            <h3>
+              <strong>
+                <span class="word">
+                  <span>B</span>
+                  <span>u</span>
+                  <span>s</span>
+                  <span>i</span>
+                  <span>n</span>
+                  <span>e</span>
+                  <span>s</span>
+                  <span>s</span>
+                </span>
+              </strong>
+            </h3>
+            <p>우리 삶과 산업발전에 필수적인 무기화학제품 및 대표적인 건축자재인 MDF를 생산하는 유니드는
+              높은 기술력과 독보적인 품질 경쟁력으로 국내외의 인정을 받고 있습니다.</p>
+            </div>
+          </div>
+        <div class="con con1">
+          <div class="content-box">
+            <div class="content-inner area-box">
+              <div class="video-box left">
+                <div class="video-inner">
+                  <div id="sec1-video1" class="player" data-property="{
+                    videoURL: 'https://youtu.be/7d5KVIEnBj8?list=TLGGKmI5sXZY7eUxMzA1MjAyMg',
+                    mute: true,
+                    showControls: false,
+                    useOnMobile: true,
+                    quality: 'highres',
+                    containment: 'self',
+                    optimizeDisplay: true,
+                    loop: true,
+                    autoPlay: true,
+                    stopMovieOnBlur: false,
+                    startAt: 0,
+                    opacity: 1
+                  }">
+                  </div>
+                </div>
+              </div>
+              <div class="txt-box right">
+                <div class="txt">
+                  <h4>Chemical</h4>
+                  <p class="sub-title">화학사업부</p>
+                  <p class="sub-txt">
+                    화학사업부는 기초무기화학제품인<br>
+                    가성칼륨, 탄산칼륨과 염소, 염산, 수소 등의<br>
+                    제품을 생산하고 있습니다.
+                  </p>
+                </div>
+                <div class="btn-group">
+                  <div class="btn-inner left">
+                    <div class="bg"></div>
+                    <a href="#">제품보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="con con2">
+          <div class="bg3">
+            <img src="./img/sec1/bg03.png" alt="배경3">
+          </div>
+          <div class="content-box">
+            <div class="content-inner area-box">
+              <div class="video-box right">
+                <div class="video-inner">
+                  <div id="sec1-video2" class="player" data-property="{
+                    videoURL: 'https://youtu.be/yEDaiP4D8_o?list=TLGGhpzFoo2EI98xMzA1MjAyMg',
+                    mute: true,
+                    showControls: false,
+                    useOnMobile: true,
+                    quality: 'highres',
+                    containment: 'self',
+                    optimizeDisplay: true,
+                    loop: true,
+                    autoPlay: true,
+                    stopMovieOnBlur: false,
+                    startAt: 0,
+                    opacity: 1
+                  }">
+                  </div>
+                </div>
+              </div>
+              <div class="txt-box left">
+                <div class="txt">
+                  <h4>Board &<br>Timber</h4>
+                  <p class="sub-title">보드사업부</p>
+                  <p class="sub-txt">
+                    보드 사업부는 판상재인 MDF (Medium Desity Fiberboard)<br>
+                    및 올고다 마루를 제조 및 판매하고 있습니다.
+                  </p>
+                </div>
+                <div class="btn-group">
+                  <div class="btn-inner right">
+                    <div class="bg"></div>
+                    <a href="#">제품보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 섹션2 about 영역 -->
+      <section id="second" class="sec about">
+        <div class="title-box">
+          <div class="inner area">
+            <span>02</span>
+            <!-- before -->
+            <h3>
+              <strong>
+                <span class="word">
+                  <span>A</span>
+                  <span>b</span>
+                  <span>o</span>
+                  <span>u</span>
+                  <span>t</span>
+                </span> <!-- About -->
+                <span class="space"></span> <!-- 띄어쓰기 -->
+                <span class="word">
+                  <span>U</span>
+                  <span>N</span>
+                  <span>I</span>
+                  <span>D</span>
+                </span> <!-- UNID -->
+              </strong>
+            </h3>
+            <p>혁신과 창의로 세상이 필요한 것을 만들어 인류의 보다 나은 내일에 기여한다.</p>
+          </div>
+        </div>
+        <div class="con-wrap">
+          <div class="con-top area-box">
+            <div class="cnt-box">
+              <div class="cnt-inner">
+                <div class="cnt1" data-label="신뢰">
+                  <div class="cnt-img">
+                    <p>신뢰</p>
+                    <img src="./img/sec2/img01.png" alt="신뢰">
+                  </div>
+                </div>
+                <div class="cnt2" data-label="소통">
+                  <div class="cnt-img">
+                    <p>소통</p>
+                    <img src="./img/sec2/img02.png" alt="소통">
+                  </div>
+                </div>
+                <div class="cnt3" data-label="열정과 도전">
+                  <div class="cnt-img">
+                    <p>열정과 도전</p>
+                    <img src="./img/sec2/img03.png" alt="열정과 도전">
+                  </div>
+                </div>
+                <a href="#" class="vision-btn">2030 VISION</a>
+              </div>
+            </div>
+            <div class="bg-box left">
+              <div class="bg1">
+                <img src="./img/sec2/txt01.png" alt="DoDream">
+              </div>
+              <div class="bg2">
+                <img src="./img/sec2/txt02.png" alt="ToDream">
+              </div>
+            </div>
+          </div>
+          <div class="con-bottom">
+            <div class="line-bg clip">
+              <img src="./img/sec2/bg01.png" alt="배경이미지">
+            </div>
+            <div class="area-box">
+              <div class="stock">
+                <h5>
+                  <img src="./img/sec2/graph.png" alt="주가정보">
+                  주가정보
+                </h5>
+                <b class="price">120000</b>
+                <div class="txt">
+                  <dl>
+                    <dt>전일대비</dt>
+                    <dd>
+                      <i>0</i>
+                      <span>0%</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>전일종가</dt>
+                    <dd>120,000</dd>
+                  </dl>
+                  <a href="#">→</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 섹션3 global 영역 -->
+      <section id="third" class="sec global">
+        <div class="title-box">
+          <div class="inner area">
+            <span>03</span>
+            <!-- before -->
+            <h3>
+              <strong>
+                <span class="word">
+                  <span>G</span>
+                  <span>l</span>
+                  <span>o</span>
+                  <span>b</span>
+                  <span>a</span>
+                  <span>l</span>
+                </span> <!-- Global -->
+                <span class="space"></span> <!-- 띄어쓰기 -->
+                <span class="word">
+                  <span>N</span>
+                  <span>e</span>
+                  <span>t</span>
+                  <span>w</span>
+                  <span>o</span>
+                  <span>r</span>
+                  <span>k</span>
+                </span> <!-- Network -->
+              </strong>
+            </h3>
+            <ul>
+              <li>
+                <span class="cir"></span>
+                <span class="txt">Plant</span>
+              </li>
+              <li>
+                <span class="cir"></span>
+                <span class="txt">Branch office</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="map-box">
+          <span class="bg"></span>
+          <div class="nation-box">
+            <a href="#" class="cir1">
+              <i></i>
+              <p>Turkey</p>
+            </a>
+            <a href="#" class="cir2">
+              <i></i>
+              <p>India</p>
+            </a>
+            <a href="#" class="cir3">
+              <i></i>
+              <p>Vietnam</p>
+            </a>
+            <a href="#" class="cir4">
+              <i></i>
+              <p>Indonesia</p>
+            </a>
+            <a href="#" class="cir5">
+              <i></i>
+              <p>China</p>
+            </a>
+            <a href="#" class="cir6">
+              <i></i>
+              <p>Phillippines</p>
+            </a>
+            <a href="#" class="cir7">
+              <i></i>
+              <p>Japan</p>
+            </a>
+            <a href="#" class="cir8">
+              <i></i>
+              <p>USA</p>
+            </a>
+            <a href="#" class="cir9">
+              <i></i>
+              <p>Peru</p>
+            </a>
+            <a href="#" title="USC" class="cir10">
+              <i></i>
+            </a>
+            <a href="#" title="UJC" class="cir11">
+              <i></i>
+            </a>
+            <a href="#" title="OJC" class="cir12">
+              <i></i>
+            </a>
+            <a href="#" title="Korea" class="cir13">
+              <i></i>
+              <img src="./img/sec3/map_logo.png" alt="로고">
+            </a>
+          </div>
+        </div>
+        <div class="map-box-m">
+          <img src="./img/sec3/mobile_bg_map.png" alt="모바일지도">
+        </div>
+      </section>
+      <!-- 서브섹션 채용정보/홍보영상 영역 -->
+      <section  id="sub"class="sec sub recruit">
+        <div class="recruit-wrap left">
+          <div class="recruit-inner">
+            <div class="recruit-txt">
+              <h5>채용정보</h5>
+              <p class="txt">좋은 사람들이 즐겁게 일하는<br>일등 소재 기업</p>
+              <div class="link">
+                <a href="#">채용안내</a>
+                <a href="#">유니드 인재상</a>
+                <a href="#">채용공고</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recruit-wrap right">
+          <div class="recruit-inner">
+            <div class="recruit-txt">
+              <h5>홍보영상</h5>
+              <p class="txt">40년을 넘어<br>100년을 도약합니다.</p>
+              <div class="link">
+                <a href="#">
+                  <div class="icon">
+                    <img src="./img/sub/play.png" alt="재생">
+                  </div>
+                  <p>유니드홍보영상 시작<span>Play</span></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 섹션4 news 영역 -->
+      <section id="fourth" class="sec news">
+        <div class="title-box">
+          <div class="inner area">
+            <span>04</span>
+            <!-- before -->
+            <h3>
+              <strong>
+                <span class="word">
+                  <span>N</span>
+                  <span>e</span>
+                  <span>w</span>
+                  <span>s</span>
+                </span> <!-- News -->
+                <span class="space"></span> <!-- 띄어쓰기 -->
+                <span class="word">
+                  <span>R</span>
+                  <span>o</span>
+                  <span>o</span>
+                  <span>m</span>
+                </span> <!-- Room -->
+              </strong>
+            </h3>
+            <p>유니드의 다양한 회사소식을 만나보세요.</p>
+          </div>
+        </div>
+        <div class="cnt-box">
+          <div class="area">
+            <div class="news-wrap swiper mySwiper">
+              <ul class="news-box swiper-wrapper">
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>22.04</span>
+                        <b>26</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom">
+                      <h5>유니드, 1Q 영업익 584억원... 전년비 33.53% 증가</h5>
+                      <p>[아시아경제 지연진 기자] 유니드는 올해 1분기 매출액이 전년동기대비 42.68% 증가한 3704억원으로 집계됐다고 22일 공시했다. 이 기간 영업이익은 33.53% 증가한 584억원, 당기순이익은 466억원으로 25.78% 늘었다.지연진 기자 gyj@asiae.co.kr</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>22.03</span>
+                        <b>15</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/220315.png" alt="220315뉴스이미3">
+                      </div>
+                      <h5>유니드, 코리아빌드에 ‘올고다 마루’ 출품</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>22.04</span>
+                        <b>14</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom">
+                      <h5>유니드 2억원 산불성금</h5>
+                      <p>유니드 2억원 산불성금화학제품 및 목재 전문기업 ㈜유니드는 동해안 산불에 따른 피해 복구 및 이재민 구호를 위한 성금 2억원을 전국재해구호협회에 14일 전달한다고 13일 밝혔다. 회사 측은 “산림 자원을 활용하는 기업으로서 피해 주민들이 하루빨리 삶의 터전을 되찾기를 기원하는 마음”이라고 말했다. 유니드는 2019년 강원도 인제 산불 때도 성금 1억원을 전달했다.출처 : 조선일보 (https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=101&oid=023&aid=0003678491)</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>22.02</span>
+                        <b>22</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/220222.jpg" alt="뉴스이미지">
+                      </div>
+                      <h5>유니드, CGV영등포에 ‘올고다 마루 전시장’ 오픈</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>21.12</span>
+                        <b>22</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/211222.png" alt="뉴스이미지">
+                      </div>
+                      <h5>유니드, 후원금 3005만원과 백미 234포 기탁</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>21.12</span>
+                        <b>06</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/211206.jpg" alt="뉴스이미지">
+                      </div>
+                      <h5>유니드, 취약계층에게 생필품과 난방용품 등 물품 후원</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>21.11</span>
+                        <b>16</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/211116.png" alt="뉴스이미지">
+                      </div>
+                      <h5>유니드, 마루 브랜드 올고다에 광폭 사이즈 ‘로카 라인’ 추가 </h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>21.09</span>
+                        <b>14</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/210914.png" alt="뉴스이미지">
+                      </div>
+                      <h5>유니드 올고다 마루, 오늘부터 ‘부산코리아빌드’</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-li swiper-slide">
+                  <a href="#">
+                    <div class="news-top">
+                      <div class="date">
+                        <span>21.08</span>
+                        <b>10</b>
+                      </div>
+                    </div>
+                    <div class="news-bottom img-wrap">
+                      <div class="img-box">
+                        <img src="./img/sec4/210810.png" alt="뉴스이미지">
+                      </div>
+                      <h5>유니드 올고다 마루, 코리아빌드 참가</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 푸터 영역 -->
+      <footer id="footer">
+        <div class="footer-inner">
+          <!-- 탑버튼 -->
+          <div class="top-btn">
+            <a href="#main"><img src="./img/top_arrow.png" alt="위로"></a>
+          </div>
+          <div class="area-box">
+            <form>
+              <!-- 푸터 오른쪽 -->
+              <div class="f-right">
+                <input type="hidden" name="lang" value="1">
+                <div class="f-top">
+                  <h5>온라인 문의<span>Online Inquiry</span></h5>
+                  <div class="check-wrap">
+                    <a href="#">개인정보처리방침 보기</a>
+                    <div class="check-box">
+                      <img src="./img/check.png" alt="체크">
+                      <input type="checkbox" id="check" name="checkbox">
+                      <label for="check">
+                        <span>동의</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="f-bottom">
+                  <ul>
+                    <li>
+                      <input type="text" name="name" placeholder="성명을 입력해주세요.">
+                    </li>
+                    <li class="empty">&nbsp;</li>
+                    <li>
+                      <input type="text" name="tel"placeholder="연락처를 입력해주세요.">
+                    </li>
+                    <li>
+                      <input type="text" name="email" placeholder="이메일을 입력해주세요.">
+                    </li>
+                    <li>
+                      <textarea name="content" cols="30" rows="10" placeholder="내용을 입력해주세요. (150자 이내)"></textarea>
+                    </li>
+                  </ul>
+                  <div class="f-btnBox">
+                    <button class="f-btn">
+                      <span>작성완료</span>
+                      <img src="./img/send.png" alt="작성완료">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 푸터 왼쪽 -->
+              <div class="f-left">
+                <span class="footer-logo">
+                  <img src="./img/footer_logo.png" alt="유니드로고">
+                </span>
+                <ul class="f-menu">
+                  <li><a href="#">전자공고/공시</a></li>
+                  <li><a href="#">영업소</a></li>
+                  <li><a href="#">고객지원</a></li>
+                  <li><a href="#">글로벌 네트워크</a></li>
+                </ul>
+                <div class="f-address">
+                  <p>서울특별시 중구 을지로5길 19(수하동) 페럼타워 17층</p>
+                  <p>TEL : 02.0000.0000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAX : 02.1111.1111</p>
+                </div>
+                <div class="f-link">
+                  <ul>
+                    <li>
+                      <img src="./img/description.png" alt="개인정보 처리방침">
+                      <a href="#">개인정보 처리방침</a>
+                    </li>
+                    <li class="gray">
+                      <img src="./img/description.png" alt="영상정보처리기기 운영/관리방침">
+                      <a href="#">영상정보처리기기 운영/관리방침</a>
+                    </li>
+                    <li class="gray">
+                      <img src="./img/text.png" alt="신문고">
+                      <a href="#">신문고</a>
+                    </li>
+                    <li>
+                      <img src="./img/blog.png" alt="네이버 블로그">
+                      <a href="#">네이버 블로그</a>
+                    </li>
+                    <li>
+                      <div class="family-box">
+                        <div class="family-open">
+                          FAMILY SITE
+                          <img src="./img/arrow.png" alt="FAMILY SITE">
+                        </div>
+                        <ul class="family-list">
+                          <li><a href="#">유니드글로벌상사</a></li>
+                          <li><a href="#">올고다</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gray">
+                      <img src="./img/open-icon.png" alt="원재료,제품 입출고현황">
+                      <a href="#">원재료&middot;제품 입출고현황</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="f-copy">COPYRIGHT 2021<span>UNID</span>. ALL RIGHTS RESERVED</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // // 윈도우 로드 완료시 #load 숨김 처리
+      // $(window).load(function() {
+      //   $('.load').hide();
+      // });
+      // 슬라이드
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView : 'auto',
+        loop : true,   // 슬라이드 반복 여부
+        loopAdditionalSlides : 1,
+        spaceBetween: 30,
+        centeredSlides: false,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          500: {
+            slidesPerView: 2,
+          },
+          800: {
+            slidesPerView: 2.8,
+          },
+          1240: {
+            slidesPerView : 'auto',
+          },
+        }
+      });
+    </script>
+  </body>
+</html>

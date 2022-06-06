@@ -1,0 +1,292 @@
+// layout 공통
+$headerHeight: 70px;
+$subMenuHeight: 50px;
+$footerHeight: 80px;
+$mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
+#wrap {
+  width: 100%;
+  .header-box {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    transition: .5s;
+    &.on {
+      background: #fff;
+      transition: .5s;
+    }
+    #header {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+    box-sizing: border-box;
+    height: $headerHeight;
+    // 로고 영역
+    #top-logo {
+      float: left;
+      position: relative;
+      z-index: 1;
+      a {
+        height: $headerHeight;
+        line-height: $headerHeight;
+      }
+    }
+    // 메인 메뉴
+    #top-nav {
+      position: relative;
+      height: $headerHeight;
+      margin: 0 20%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      ul { /// #top-nav ul 표기와 동일 (///:컴파일될 때 노출안됨)
+        float: left;
+        & > li {
+          position: relative;
+          float: left;
+          margin-left: 80px;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:nth-child(2) {
+            .sub-menu {
+              left: -130%;
+            }
+          }
+          &:nth-child(4) {
+            .sub-menu {
+              left: -75%;
+            }
+          }
+          & > a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: $headerHeight;
+            &:after {
+              position: absolute;
+              bottom: 2px;
+              left: 50%;
+              content: '';
+              display: block;
+              width: 0;
+              height: 2px;
+              background: $fontColorBasic;
+              transition: .5s;
+            }
+          }
+          &:hover {
+            & > a:after {
+              width: 100%;
+              left: 0%;
+            }
+            .sub-menu {
+              visibility: visible;
+              top: 100%;
+              opacity: 1;
+            }
+          }
+          // submenu 구현
+          .sub-menu {
+            position: absolute;
+            border: 1px solid $borderColorPrimary;
+            visibility: hidden;
+            top: calc(100% - 3px);
+            left: -100%;
+            opacity: 0;
+            transition: .3s;
+            z-index: 500;
+            li {
+              width: 100%; /// float: left 초기화하기 위함
+              margin: 0; /// margin-left: 30px 초기화하기 위함
+              background: white;
+              box-sizing: border-box;
+              padding: 0 10px; /// 상하 0 좌우 10px
+              min-width: 200px;
+              transition: .3s;
+              &:hover {
+                background: $gbtnColor;
+                a {
+                  color: white;
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+              a {
+                height: $subMenuHeight;
+                line-height: $subMenuHeight;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+  main {
+    min-height: $mainMinHeight;
+    ul {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      max-width: 1720px;
+      height: 95px;
+      z-index: 200;
+      li {
+        position: relative;
+        width: 33.333%;
+        background: #fff;
+        border-bottom: 2px solid #f3f3f3;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+          width: 0;
+          height: 100%;
+          background: $gbtnColor;
+          transition: 4s;
+        }
+        &.on:before {
+          width: 100%;
+          color: #262f40;
+          border-right: none;
+        }
+        &:last-child a {
+          border-right: none;
+        }
+        a {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          line-height: 95px;
+          border-right: 1px solid #f3f3f3;
+          background: none;
+          text-align: center;
+          color: #999;
+          font-size: $fontSizeMid;
+          box-sizing: border-box;
+          transition: .5s;
+          z-index: 100;
+          &:hover {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    margin-top: 50px;
+    // border-top: 1px solid $borderColorPrimary;
+    color: #fff;
+    background: $footerBg;
+    .footer-top {
+      padding: 60px 50px 30px;
+    }
+    & > .container {
+      padding: 30px 0;
+      text-align: center;
+    }
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .column {
+          flex: 25%;
+          padding: 0 10px;
+          margin-bottom: 30px;
+          box-sizing: border-box;
+          &.footer-logo {
+            flex: 100px;
+            h3 {
+              font-size: $titleFontSizeBig;
+              padding: 2px 0 2px 0px;
+              line-height: 1;
+              font-weight: 700;
+              letter-spacing: 3px;
+            }
+          }
+          &.news {
+            p {
+              margin-bottom: 20px;
+            }
+            input {
+              &[type=text] {
+                border: 0;
+                padding: 6px 8px;
+                width: 65%;
+                box-sizing: border-box;
+                outline: none;
+              }
+              &[type=submit] {
+                border: 0;
+                padding: 6px 0;
+                width: 35%;
+                background: $gbtnColor;
+                color: white;
+                cursor: pointer;
+                outline: none;
+              }
+            }
+          }
+          h4 {
+            position: relative;
+            font-size: $fontSizeNormal;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            // 컬럼 타이틀 언더라인
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 2px;
+            }
+            &:before {
+              width: 100%;
+              background: $borderColorPrimary;
+            }
+            &:after {
+              width: 60px;
+              background: $borderColor1;
+            }
+          }
+          // ul list 영역
+          ul {
+            li {
+              border-bottom: 1px solid $borderColorPrimary;
+              padding: 10px 0;
+              &:nth-child(1) {
+                padding-top: 0;
+              }
+              a {
+                color: $borderColorPrimary;
+              }
+            }
+          }
+          // 컬럼 텍스트
+          p {
+            line-height: 26px;
+            a {
+              color: $borderColorPrimary;
+            }
+          }
+        }
+      }
+      .credits {
+        a {
+          color: $borderColorPrimary;
+        }
+      }
+    }
+  }
+}

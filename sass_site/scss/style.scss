@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// scss 파일 분화
+@import "var.scss"; // 공통 변수
+@import "mixin.scss"; // 공통 mixin
+@import "initial.scss"; // css 초기화
+@import "common.scss";; // 공통 요소
+@import "component.scss"; // 공통 컴포넌트
+@import "layout.scss"; // 공통 레이아웃
+
+// 페이지 분화
+@import "main.scss"; // 메인 페이지
+@import "subpage.scss"; // 서브 페이지 공통 부분(서브 페이지 하나만 있을 땐 그 서브페이지용으로 사용)
+// @import "company.scss"; // 각 페이지별 구성
