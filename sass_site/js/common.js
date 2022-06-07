@@ -74,8 +74,15 @@ $(function() {
     } else if(thisScrTop == 0) {
       $('.header-box').removeClass('on');
     }
-  })
+  });
 
-  // 메인배너 list 반응
+  // mainbanner의 첫번째 li에 on 클래스 추가
+  $('.swiper-wrapper + ul > li:first-child').addClass('on');
+
+  // 푸터영역 family site 이벤트
+  $('.family-box').click(function() {
+    $('ul', this).slideToggle();
+    $(this).toggleClass('open');
+  });
 
 });
